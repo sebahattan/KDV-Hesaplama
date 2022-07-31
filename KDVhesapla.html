@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Farklı Aygıtlarda Sorun yaşaması için bu kodu ekliyoruz -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Bootstrap CSS Dosyasını Ekliyoruz -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- font-awesome CSS Dosyasını Ekliyoruz -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom CSS Dosyasını Ekliyoruz -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- Jquery  JS Dosyasını Ekliyoruz -->
+  <script src="jq/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap JS Dosyasını Ekliyoruz -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Sayfamızın Başlık Kısmını Ekliyoruz -->
+  <title></title>
+
+</head>
+
+<body>
+  <div class="container d-flex justify-content-center">
+    <div class="card text-center" style="width: 18rem;">
+
+      <div class="card-header">PARA BİRİMİ</div>
+      <select class="form-select" id="turSec" aria-label="Default select example">
+        <option selected>BİRİM SEÇ</option>
+      </select>
+      <form class="form-floating">
+        <input type="text" class="form-control " id="secilenPara" placeholder="12121">
+        <label for="secilenPara">SEÇİLEN BİRİM</label>
+      </form>
+
+      <div class="card-header">KDV SEC</div>
+      <select class="form-select" id="kdvSec" aria-label="Default select example">
+        <option selected>KDV TÜRLERİ</option>
+      </select>
+      <form class="form-floating">
+        <input type="text" class="form-control " id="secilenKdv" placeholder="12121">
+        <label for="secilenKdv">SEÇİLEN KDV</label>
+      </form>
+
+      <div class="card-header">PARA MİKTARI</div>
+      <form class="form-floating">
+        <input type="text" class="form-control " id="girilenPara" placeholder="12121">
+        <label for="girilenPara">Miktar giriniz:</label>
+      </form>
+      <div class="card-header"></div>
+      <button class="btn btn-primary" type="submit" id="hesap">KDV HESAPLA</button>
+      <div class="card-header"> </div>
+      <form class="form-floating">
+       
+        <input type="text" class="form-control " id="paraSonuc" readonly>
+        <label for="paraSonuc">HESAPLANAN MİKTAR</label>
+      
+      </form>
+
+
+    </div>
+  </div>
+</body>
+
+<!-- <script src="customScript\Nesne.js"></script> -->
+
+
+<script src="customscript\PARA.js"></script>
+
+</html>
